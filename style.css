@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(13, 33, 50), rgb(6, 27, 45));
+}
+
+.calculator{
+    width: 30rem;
+    background: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(174, 177, 181, 0.192);
+}
+
+input{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+    text-align: right;
+    background: transparent;
+    margin-bottom: 0.8rem;
+    border: none;
+    box-shadow: 0 0 15px rgb(85, 85, 85, 0.1);
+    cursor: text;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 1.3rem 0.5rem 1.3rem;
+    box-shadow: -4px -4px 15px rgb(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: #afedfb;
+}
+
+.rightDiv{
+    margin-left: 5px;
+}
+
+.dark-btn{
+    color: rgb(9 182 203);
+}
+
+.eql-btn{
+    background-color: rgb(255, 166, 0);
+}
+
+button.clicked {
+    transform: scale(0.9);
+    box-shadow: -1px -1px 15px rgba(255, 255, 255, 0.05);
+}
